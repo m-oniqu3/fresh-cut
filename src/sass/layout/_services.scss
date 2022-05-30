@@ -1,0 +1,15 @@
+.services {
+  padding-top: 2rem;
+
+  &__intro {
+    .article {
+      padding: 2rem 0 4rem;
+    }
+  }
+
+  &__offered {
+    .article {
+      padding: 3rem 0 4rem;
+    }
+  }
+}

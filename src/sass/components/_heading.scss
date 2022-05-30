@@ -16,6 +16,13 @@
     text-transform: uppercase;
   }
 
+  &--sml {
+    @extend .heading;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
   &.black {
     color: a.$black;
   }

@@ -1,0 +1,14 @@
+.card {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  border: hsla(0, 0%, 85%, 0.592) 1px solid;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  width: 70%;
+  margin: 1rem auto;
+  text-align: center;
+
+  i {
+    color: #dbdbdb;
+    padding: 2rem 0;
+  }
+}
