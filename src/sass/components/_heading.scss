@@ -1,0 +1,19 @@
+@use "../abstracts/" as a;
+
+.heading {
+  font-family: "Onyx";
+
+  &--medium {
+    @extend .heading;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  &.black {
+    color: a.$black;
+  }
+
+  &.white {
+    color: a.$white;
+  }
+}

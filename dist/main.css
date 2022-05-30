@@ -1,1 +1,1 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:"Roboto Condensed",sans-serif}/*# sourceMappingURL=main.css.map */
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Roboto Condensed",sans-serif}nav{display:flex;justify-content:space-between;align-items:center;height:10vh}.heading,.heading--medium{font-family:"Onyx"}.heading--medium{font-size:2.5rem;font-weight:500}.heading.black,.black.heading--medium{color:#000}.heading.white,.white.heading--medium{color:#fff}.container{width:85%;margin-inline:auto}/*# sourceMappingURL=main.css.map */
