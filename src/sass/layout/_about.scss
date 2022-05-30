@@ -25,4 +25,35 @@
       width: 85%;
     }
   }
+
+  &__team {
+    color: a.$white;
+    padding: 3rem 0;
+    background: radial-gradient(
+      90.13% 220.52% at 3.36% 7.64%,
+      #1f1e1ed5 11.77%,
+      rgba(0, 0, 0, 0.72) 72.97%,
+      rgba(0, 0, 0, 0.68) 100%
+    );
+
+    &__pictures {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      figure {
+        width: 20%;
+        height: 100px;
+        margin: 2rem 0 4rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 214px 214px 0px 0px;
+          display: block;
+        }
+      }
+    }
+  }
 }
