@@ -1,6 +1,12 @@
+@use "../abstracts/" as a;
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+
+  i {
+    color: a.$white;
+  }
 }

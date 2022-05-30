@@ -1,0 +1,35 @@
+@use "../abstracts/" as a;
+
+button {
+  padding: 0.625rem 0.8125rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+
+  &.primary {
+    @extend button;
+    background-color: a.$white;
+    color: a.$black;
+    border: 2px solid a.$white;
+
+    &:hover {
+      background-color: a.$black;
+      color: a.$white;
+      border: 2px solid a.$black;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &.secondary {
+    @extend button;
+    background: none;
+    border: 2px solid a.$white;
+    color: a.$white;
+
+    &:hover {
+      background: a.$black;
+      border: 2px solid a.$black;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

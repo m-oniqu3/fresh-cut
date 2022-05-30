@@ -1,0 +1,25 @@
+@use "../abstracts/" as a;
+
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)),
+    url("https://images.unsplash.com/photo-1520338661084-680395057c93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: a.$white;
+  position: relative;
+
+  &__intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    text-align: center;
+
+    button {
+      margin: 0.5rem;
+    }
+  }
+}

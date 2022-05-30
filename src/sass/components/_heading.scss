@@ -9,6 +9,13 @@
     font-weight: 500;
   }
 
+  &--large {
+    @extend .heading;
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
   &.black {
     color: a.$black;
   }
