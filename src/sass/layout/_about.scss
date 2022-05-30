@@ -1,0 +1,28 @@
+@use "../abstracts/" as a;
+
+.about {
+  &__content {
+    article {
+      padding: 5rem 0;
+    }
+  }
+
+  &__style {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)),
+      url("https://images.unsplash.com/photo-1533808232502-bee53575c3af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: a.$white;
+    position: relative;
+
+    article {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 85%;
+    }
+  }
+}

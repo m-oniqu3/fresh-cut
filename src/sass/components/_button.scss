@@ -23,13 +23,27 @@ button {
   &.secondary {
     @extend button;
     background: none;
-    border: 2px solid a.$white;
-    color: a.$white;
+    border: 2px solid a.$black;
+    color: a.$black;
 
     &:hover {
       background: a.$black;
       border: 2px solid a.$black;
+      color: a.$white;
       transition: all 0.3s ease-in-out;
+    }
+
+    &--white {
+      @extend button, .secondary;
+      color: a.$white;
+      border: 2px solid a.$white;
+
+      &:hover {
+        background: a.$black;
+        border: 2px solid a.$black;
+        color: a.$white;
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
 }
