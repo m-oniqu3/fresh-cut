@@ -1,11 +1,12 @@
 .rounded {
   width: 100%;
-  height: 100%;
+  height: 550px;
 
   img {
     width: 100%;
     height: 100%;
     border-radius: 214px 214px 0px 0px;
     display: block;
+    object-fit: cover;
   }
 }
