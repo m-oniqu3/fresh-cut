@@ -3,6 +3,17 @@
 .heading {
   font-family: "Onyx";
 
+  &--sml {
+    @extend .heading;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    @include a.breakpoint(medium) {
+      font-size: 2rem;
+    }
+  }
+
   &--medium {
     @extend .heading;
     font-size: 2.5rem;
@@ -18,13 +29,6 @@
     @include a.breakpoint(medium) {
       font-size: 5rem;
     }
-  }
-
-  &--sml {
-    @extend .heading;
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 2px;
   }
 
   &.black {

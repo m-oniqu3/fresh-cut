@@ -2,8 +2,21 @@
 
 .about {
   &__content {
+    @include a.breakpoint(large) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+    }
+
     article {
       padding: 5rem 0;
+
+      @include a.breakpoint(large) {
+        order: 1;
+        padding: 0;
+        width: 80%;
+        margin-right: auto;
+      }
     }
   }
 
@@ -20,6 +33,7 @@
     height: 100vh;
     color: a.$white;
     position: relative;
+    max-height: 25rem;
 
     article {
       position: absolute;
@@ -28,8 +42,9 @@
       transform: translate(-50%, -50%);
       width: 85%;
 
-      @include a.breakpoint(medium) {
-        width: 70%;
+      @include a.breakpoint(large) {
+        width: 50%;
+        left: 35%;
       }
     }
   }

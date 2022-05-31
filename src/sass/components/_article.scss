@@ -1,5 +1,11 @@
+@use "../abstracts/" as a;
+
 .article {
   text-align: center;
+
+  @include a.breakpoint(large) {
+    text-align: left;
+  }
 
   button {
     margin: 1.5rem 0;

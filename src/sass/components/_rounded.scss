@@ -4,6 +4,10 @@
   width: 100%;
   height: 550px;
 
+  @include a.breakpoint(large) {
+    height: 700px;
+    max-width: 450px;
+  }
   img {
     width: 100%;
     height: 100%;

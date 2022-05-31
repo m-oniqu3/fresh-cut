@@ -1,7 +1,8 @@
 // Map with breakspoints for media queries
 $breakpoints: (
   "medium": 48em,
-  "large": 64em,
+  "large": 56.25em,
+  "xlarge": 64em,
 );
 
 // Mixin for media queries
