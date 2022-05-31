@@ -18,6 +18,10 @@
     width: 85%;
     text-align: center;
 
+    @include a.breakpoint(medium) {
+      width: 70%;
+    }
+
     button {
       margin: 0.5rem;
     }

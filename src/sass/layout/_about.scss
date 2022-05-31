@@ -27,6 +27,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 85%;
+
+      @include a.breakpoint(medium) {
+        width: 70%;
+      }
     }
   }
 
@@ -49,12 +53,13 @@
         width: 20%;
         height: 100px;
         margin: 2rem 0 4rem;
+        max-width: 90px;
 
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 214px 214px 0px 0px;
+          border-radius: 57vw 57vw 0vw 0vw;
           display: block;
         }
       }
@@ -62,6 +67,11 @@
 
     &__info {
       margin-top: 3rem;
+    }
+
+    .rounded {
+      max-width: 400px;
+      margin: 0 auto;
     }
   }
 }

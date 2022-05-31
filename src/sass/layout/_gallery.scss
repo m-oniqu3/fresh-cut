@@ -1,7 +1,13 @@
+@use "../abstracts/" as a;
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
+
+  @include a.breakpoint(medium) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   figure {
     width: 100%;
