@@ -6,6 +6,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       place-items: center;
+      place-content: center space-evenly;
     }
 
     article {
@@ -15,12 +16,6 @@
         order: 1;
         padding: 0;
         width: 80%;
-      }
-    }
-
-    figure {
-      @include a.breakpoint(xlarge) {
-        margin-right: auto;
       }
     }
   }

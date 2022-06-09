@@ -3,15 +3,12 @@
 .services {
   padding-top: 2rem;
 
-  @include a.breakpoint(large) {
-    padding: 0;
-  }
-
   &__intro {
     @include a.breakpoint(large) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       place-items: center;
+      place-content: center space-evenly;
     }
 
     .article {
@@ -20,12 +17,6 @@
       @include a.breakpoint(large) {
         padding: 0;
         width: 80%;
-      }
-    }
-
-    figure {
-      @include a.breakpoint(large) {
-        margin-left: auto;
       }
     }
   }
@@ -49,12 +40,9 @@
 
     &__list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
       place-items: center;
-      place-content: center;
-      max-width: 800px;
-      margin: 0 auto;
     }
   }
 }
