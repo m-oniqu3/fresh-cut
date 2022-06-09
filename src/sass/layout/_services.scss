@@ -21,10 +21,6 @@
         padding: 0;
         width: 80%;
       }
-
-      @include a.breakpoint(xlarge) {
-        margin-left: auto;
-      }
     }
 
     figure {
@@ -35,14 +31,19 @@
   }
   &__offered {
     @include a.breakpoint(large) {
-      width: 90%;
-      margin: 5rem auto;
+      margin: 5rem 0;
     }
+
     .article {
       padding: 3rem 0 4rem;
 
+      @include a.breakpoint(large) {
+        text-align: center;
+      }
+
       p {
-        max-width: 350px;
+        max-width: 450px;
+        margin: 0 auto;
       }
     }
 
