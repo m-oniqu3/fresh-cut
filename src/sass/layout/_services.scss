@@ -1,15 +1,42 @@
+@use "../abstracts/" as a;
+
 .services {
   padding-top: 2rem;
 
-  &__intro {
-    .article {
-      padding: 2rem 0 4rem;
-    }
+  @include a.breakpoint(large) {
+    padding: 0;
   }
 
+  &__intro {
+    @include a.breakpoint(large) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+    }
+
+    .article {
+      padding: 2rem 0 4rem;
+
+      @include a.breakpoint(large) {
+        padding: 0;
+        width: 80%;
+      }
+
+      @include a.breakpoint(xlarge) {
+        margin-left: auto;
+      }
+    }
+  }
   &__offered {
     .article {
       padding: 3rem 0 4rem;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      row-gap: 2rem;
+      place-items: center;
     }
   }
 }
