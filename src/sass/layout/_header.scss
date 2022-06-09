@@ -45,6 +45,11 @@
   position: relative;
   height: 10vh;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   @include a.breakpoint(medium) {
     display: flex;
     justify-content: space-between;
