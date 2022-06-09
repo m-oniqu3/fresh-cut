@@ -32,3 +32,33 @@
     }
   }
 }
+
+.nav {
+  position: relative;
+  height: 10vh;
+
+  &__links {
+    position: absolute;
+    height: 5vh;
+    top: 10vh;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    gap: 1rem;
+    background-color: chartreuse;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: a.$white;
+      font-size: 1.2rem;
+    }
+
+    &--second {
+      right: 0;
+      background-color: aqua;
+    }
+  }
+}
