@@ -1,10 +1,24 @@
-// Variables
+//variables for the navbar
+const menuIcon = document.querySelector("#menu-icon");
+const links = document.querySelectorAll(".nav__links");
+
+// variables for the team members
 const teamPictures = document.querySelectorAll(".about__team__picture");
 const teamMemberPicture = document.getElementsByClassName(
   "about__team__member"
 );
 let barberName = document.getElementById("name");
 let description = document.getElementById("description");
+
+//NAVBAR SECTION
+
+menuIcon.addEventListener("click", () => {
+  links.forEach((link) => {
+    link.classList.toggle("nav__links--active");
+  });
+});
+
+// TEAM MEMBERS SECTION
 
 // array of team info
 const teamInfo = [
