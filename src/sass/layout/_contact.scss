@@ -4,7 +4,12 @@
   @include a.breakpoint(large) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // grid-template-rows: auto auto;
+    grid-template-rows: auto auto;
+    place-content: center space-between;
+  }
+
+  @include a.breakpoint(xlarge) {
+    grid-template-columns: 35% 55%;
   }
 
   &__intro {
@@ -17,14 +22,28 @@
       grid-column: 2/ -1;
     }
 
+    .container {
+      @include a.breakpoint(xlarge) {
+        width: 100%;
+      }
+    }
+
     .article {
       @include a.breakpoint(large) {
         text-align: center;
       }
 
+      @include a.breakpoint(xlarge) {
+        text-align: left;
+      }
+
       p {
         max-width: 450px;
         margin: 0 auto;
+
+        @include a.breakpoint(xlarge) {
+          margin: 0;
+        }
       }
     }
   }
@@ -43,20 +62,36 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
       place-content: center;
+
+      @include a.breakpoint(xlarge) {
+        margin: 0;
+      }
     }
 
     article {
       .heading--sml {
         text-align: center;
+
+        @include a.breakpoint(large) {
+          text-align: left;
+        }
       }
     }
 
     &__info {
       padding: 1rem 0;
-
       width: 85%;
       max-width: 250px;
       margin: 0 auto;
+
+      @include a.breakpoint(large) {
+        margin: 0;
+      }
+
+      @include a.breakpoint(xlarge) {
+        width: 100%;
+        max-width: none;
+      }
 
       div {
         display: flex;
@@ -75,11 +110,11 @@
     @include a.breakpoint(large) {
       grid-column: 1 / 2;
       grid-row: 2 / 3;
+      height: 100%;
     }
 
     @include a.breakpoint(xlarge) {
       grid-row: 1 / 3;
-      height: 100vh;
     }
   }
 }
