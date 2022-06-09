@@ -75,6 +75,19 @@
       rgba(0, 0, 0, 0.68) 100%
     );
 
+    &__intro {
+      @include a.breakpoint(large) {
+        text-align: center !important;
+        width: 70%;
+        margin: 2rem auto;
+      }
+
+      p {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+
     &__content {
       @include a.breakpoint(large) {
         display: grid;
