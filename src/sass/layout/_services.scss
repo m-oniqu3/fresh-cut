@@ -26,17 +26,36 @@
         margin-left: auto;
       }
     }
+
+    figure {
+      @include a.breakpoint(large) {
+        margin-left: auto;
+      }
+    }
   }
   &__offered {
+    @include a.breakpoint(large) {
+      width: 90%;
+      margin: 5rem auto;
+    }
     .article {
       padding: 3rem 0 4rem;
+
+      p {
+        max-width: 350px;
+      }
     }
 
     &__list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      row-gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
       place-items: center;
+      place-content: center;
+
+      @include a.breakpoint(xlarge) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
     }
   }
 }
