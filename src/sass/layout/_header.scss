@@ -23,7 +23,7 @@
     }
 
     p {
-      max-width: 500px;
+      max-width: 600px;
       margin: 0 auto;
     }
 
@@ -35,11 +35,26 @@
 
 #menu-icon {
   cursor: pointer;
+
+  @include a.breakpoint(medium) {
+    display: none;
+  }
 }
 
 .nav {
   position: relative;
   height: 10vh;
+
+  @include a.breakpoint(medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include a.breakpoint(xlarge) {
+    justify-content: space-evenly;
+    padding-top: 2rem;
+  }
 
   &__links {
     position: absolute;
@@ -51,19 +66,37 @@
     align-items: center;
     width: 50%;
     gap: 1rem;
-    background-color: rgba(147, 147, 147, 0.316);
+    background: rgba(147, 147, 147, 0.316);
     backdrop-filter: blur(5px);
+
+    @include a.breakpoint(medium) {
+      position: relative;
+      background: none;
+      display: flex;
+      width: 40%;
+      top: 0;
+    }
+
+    @include a.breakpoint(xlarge) {
+      width: 30%;
+    }
 
     a {
       text-transform: uppercase;
       text-decoration: none;
       color: a.$white;
       font-size: 1.2rem;
+      cursor: pointer;
 
       &:hover {
         color: a.$black;
-        font-weight: 600;
+        // font-weight: 600;
         transition: all 0.3s ease-in-out;
+
+        @include a.breakpoint(medium) {
+          color: a.$white;
+          font-size: 1.5rem;
+        }
       }
     }
 

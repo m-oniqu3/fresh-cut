@@ -28,7 +28,7 @@
   <body>
     <!-- Header Section -->
 
-    <header class="header">
+    <header class="header" id="home">
       <div class="container">
         <nav class="nav">
           <!-- Links -->
@@ -37,7 +37,7 @@
               <a href="#home">home</a>
             </li>
             <li>
-              <a href="#about">about</a>
+              <a href="#services">services</a>
             </li>
           </ul>
 
@@ -46,7 +46,7 @@
           <!-- Links -->
           <ul class="nav__links nav__links--second">
             <li>
-              <a href="#services">services</a>
+              <a href="#about">about</a>
             </li>
             <li>
               <a href="#contact">contact</a>
@@ -68,15 +68,19 @@
             magni adipisci!
           </p>
 
-          <button class="primary">Book Now</button>
-          <button class="secondary--white">Locations</button>
+          <button class="primary">
+            <a href="#teams">Book Now</a>
+          </button>
+          <button class="secondary--white">
+            <a href="#location">Locations</a>
+          </button>
         </article>
       </div>
     </header>
 
     <!-- About Section -->
 
-    <section class="about">
+    <section class="about" id="about">
       <!-- About Content -->
       <section class="about__content">
         <article class="article">
@@ -94,7 +98,9 @@
               consequatur perferendis possimus veniam ex sapiente quidem atque
               iusto ipsum.
             </p>
-            <button class="secondary">Learn more</button>
+            <button class="secondary">
+              <a href="#teams">Learn more</a>
+            </button>
           </div>
         </article>
 
@@ -122,7 +128,7 @@
       </section>
 
       <!-- About Team -->
-      <section class="about__team">
+      <section class="about__team" id="teams">
         <div class="container">
           <article class="article about__team__intro">
             <h2 class="heading--large">Meet the team</h2>
@@ -273,7 +279,7 @@
 
     <!-- Services Section -->
 
-    <section class="services">
+    <section class="services" id="services">
       <!-- Services Intro -->
       <section class="services__intro">
         <article class="article">
@@ -290,7 +296,9 @@
               phasellus nec at egestas volutpat cras facilisi. Nec pretium dolor
               euismod, nam.
             </p>
-            <button class="secondary">Learn More</button>
+            <button class="secondary">
+              <a href="#offers">Learn more</a>
+            </button>
           </div>
         </article>
 
@@ -303,7 +311,7 @@
       </section>
 
       <!-- Services Offered -->
-      <section class="services__offered">
+      <section class="services__offered" id="offers">
         <div class="container">
           <article class="article">
             <h2 class="heading--large">What we offer</h2>
@@ -368,7 +376,7 @@
 
     <!-- Contact Section -->
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <!-- Contact Intro -->
       <section class="contact__intro">
         <div class="container">
@@ -381,13 +389,15 @@
                 sit vero consequuntur ipsam sunt quas. Dolorum earum porro nemo
                 laborum?
               </p>
-              <button class="secondary">Book Now</button>
+              <button class="secondary">
+                <a href="#teams"> Book Now</a>
+              </button>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="location">
+      <section class="location" id="location">
         <div class="container">
           <article>
             <h3 class="heading--sml">California</h3>
@@ -445,17 +455,17 @@
       <div class="container">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </li>
 
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
