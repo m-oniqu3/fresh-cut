@@ -12,12 +12,20 @@
     @include a.breakpoint(medium) {
       font-size: 2rem;
     }
+
+    @include a.breakpoint(xlarge) {
+      font-size: 2.5rem;
+    }
   }
 
   &--medium {
     @extend .heading;
     font-size: 2.5rem;
     font-weight: 500;
+
+    @include a.breakpoint(medium) {
+      font-size: 3rem;
+    }
   }
 
   &--large {
@@ -28,6 +36,10 @@
 
     @include a.breakpoint(medium) {
       font-size: 5rem;
+    }
+
+    @include a.breakpoint(xlarge) {
+      font-size: 6rem;
     }
   }
 

@@ -1,13 +1,12 @@
 @use "../abstracts/" as a;
 
 .contact {
-  padding: 2rem 0;
-
   @include a.breakpoint(large) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     place-content: center space-evenly;
+    padding: 4rem 0;
   }
 
   &__intro {
