@@ -50,7 +50,7 @@
 
       p {
         @include a.breakpoint(large) {
-          width: 50%;
+          width: 70%;
           margin-inline: auto;
         }
       }
