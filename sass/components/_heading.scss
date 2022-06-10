@@ -1,7 +1,7 @@
 @use "../abstracts/" as a;
 
 .heading {
-  font-family: "Onyx";
+  font-family: "Six Caps", "Georgia", "Times New Roman", Times, serif;
 
   &--sml {
     @extend .heading;
