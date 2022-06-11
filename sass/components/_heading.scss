@@ -5,9 +5,9 @@
 
   &--sml {
     @extend .heading;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 
     @include a.breakpoint(medium) {
       font-size: 2rem;
@@ -22,6 +22,7 @@
     @extend .heading;
     font-size: 2.5rem;
     font-weight: 500;
+    letter-spacing: 3px;
 
     @include a.breakpoint(medium) {
       font-size: 3rem;
@@ -33,6 +34,7 @@
     font-size: 4rem;
     font-weight: 500;
     text-transform: uppercase;
+    letter-spacing: 2px;
 
     @include a.breakpoint(medium) {
       font-size: 5rem;
