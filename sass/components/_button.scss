@@ -5,6 +5,7 @@ button {
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
   a {
     color: inherit;
@@ -26,7 +27,6 @@ button {
       background-color: a.$black;
       color: a.$white;
       border: 2px solid a.$black;
-      transition: all 0.3s ease-in-out;
     }
   }
 
@@ -40,7 +40,6 @@ button {
       background: a.$black;
       border: 2px solid a.$black;
       color: a.$white;
-      transition: all 0.3s ease-in-out;
     }
 
     &--white {
@@ -52,7 +51,6 @@ button {
         background: a.$black;
         border: 2px solid a.$black;
         color: a.$white;
-        transition: all 0.3s ease-in-out;
       }
     }
   }
